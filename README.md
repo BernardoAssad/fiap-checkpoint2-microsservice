@@ -20,19 +20,19 @@ git clone https://github.com/BernardoAssad/fiap-checkpoint2-microsservice.git
 2 - Entre no PowerShell, CMD ou sua CLI de preferência, entre no diretório do projeto e com o seu usuário docker logado (docker login) crie a imagem no Docker com o seguinte comando:
 
 ```
-docker build -t BernardoAssad/fiap-checkpoint2 .
+docker build -t beassad/fiap-checkpoint2:latest .
 ```
 
 3 - Para darmos upload de imagem para o Docker Hub
 
 ```
-docker push BernardoAssad/fiap-checkpoint2
+docker push beassad/fiap-checkpoint2:latest
 ```
 
 4 - Agora, vamos utilizar o um comando docker para executar a aplicação que criamos no docker hub com o profile "dev" - H2
 
 ```
-docker run -d -p 8080:8080 -e PROFILE=dev fiap-checkpoint2 .
+docker run -d -p 8080:8080 -e PROFILE=dev beassad/fiap-checkpoint2 .
 ```
 
 Pronto, agora basta entrar no projeto em sua IDE de preferência, rodar a aplicação em "dev" e entrar no link:
@@ -87,7 +87,7 @@ Por fim, altere as seguintes informações:
 ## Desenvolvido por:
 
 - Bernardo Assad | bernardoassad04@gmail.com
-- Bruno Benassi | brunobenassi@gmail.com
+- Bruno Benassi | brunobenassi26@gmail.com
 - Henry Pinheiro | henrypin0710@gmail.com
 
 ## Redes:
