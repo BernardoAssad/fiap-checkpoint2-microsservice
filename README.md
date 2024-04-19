@@ -93,6 +93,7 @@ Por fim, altere as seguintes informações:
 ## Redes:
 
 GitHub - https://github.com/BernardoAssad
+<br>
 DockerHub - https://hub.docker.com/u/beassad
 
 
